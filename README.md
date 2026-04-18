@@ -9,6 +9,7 @@ The app is built with Shiny for Python and provides a no-code workflow for uploa
 | Version | URL |
 | --- | --- |
 | Version A (with User Guide) | https://sherrymeow03.shinyapps.io/data-explorer-pro/ |
+| Version B (without User Guide) | https://sherrymeow03.shinyapps.io/data-explorer-pro/ |
 
 ## A/B Test Design
 
@@ -40,10 +41,9 @@ The goal is to test whether the guided onboarding experience helps users underst
 ## Project Structure
 
 ```text
-STATGR 5243 Project3/
+STATGR-5243-Project-3-Data-Preprocessing-App-AB-Test/
 |-- README.md
-|-- analysis/
-|   `-- statistical_analysis.py
+|-- statistical_analysis.py
 |-- Version A Code/
 |   `-- Version A Code/
 |       |-- app.py
