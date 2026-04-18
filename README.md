@@ -8,7 +8,7 @@ The app is built with Shiny for Python and provides a no-code workflow for uploa
 
 | Version | URL |
 | --- | --- |
-| Version A (with User Guide) | https://sherrymeow03.shinyapps.io/data-explorer-pro/ |
+| Version A (with User Guide) | https://xiao777.shinyapps.io/data-explorer-pro-A/ |
 | Version B (without User Guide) | https://sherrymeow03.shinyapps.io/data-explorer-pro/ |
 
 ## A/B Test Design
