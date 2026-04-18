@@ -4,12 +4,18 @@ This repository contains two versions of the same interactive data preprocessing
 
 The app is built with Shiny for Python and provides a no-code workflow for uploading data, cleaning it, creating new features, exploring it visually, and exporting the processed dataset.
 
+## Live Demo
+
+| Version | URL |
+| --- | --- |
+| Version A (with User Guide) | https://sherrymeow03.shinyapps.io/data-explorer-pro/ |
+
 ## A/B Test Design
 
 The two versions are intentionally kept almost identical. The main experimental difference is the presence or absence of the User Guide tab.
 
 | Version | Folder | Main Difference |
-| --- | --- | --- |
+| --- | --- |  --- |
 | Version A | `Version A Code/Version A Code` | Includes a `User Guide` tab that introduces the workflow before users start processing data. |
 | Version B | `Version B Code/Version B Code` | Removes the `User Guide` tab so users start directly from the `Data Upload` tab. |
 
@@ -36,6 +42,8 @@ The goal is to test whether the guided onboarding experience helps users underst
 ```text
 STATGR 5243 Project3/
 |-- README.md
+|-- analysis/
+|   `-- statistical_analysis.py
 |-- Version A Code/
 |   `-- Version A Code/
 |       |-- app.py
@@ -67,7 +75,7 @@ Use Python 3.10 or newer.
 First, clone the repository:
 
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/kexuanL/STATGR-5243-Project-3-Data-Preprocessing-App-AB-Test
 cd "STATGR 5243 Project3"
 ```
 
@@ -125,4 +133,23 @@ Then open the local URL shown in the terminal, usually:
 
 ```text
 http://localhost:8000
+```
+
+## Statistical Analysis
+
+The analysis script reproduces all inferential tests reported in the project report, including the two-proportion z-test, chi-square test, effect size estimates, and power analysis.
+
+```bash
+cd analysis
+pip install numpy scipy
+python statistical_analysis.py
+```
+
+Expected output:
+
+```
+Bounce rate: z=-0.909, p=0.182
+Engagement rate: chi2=0.837, p=0.360
+Power at n=30: 22.7%
+Power at n=250: 82.7%
 ```
